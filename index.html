@@ -11,11 +11,19 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     color: white;
-    text-align: center;
 }
 
+/* HEADER FLEX */
 header {
-    padding: 60px 20px;
+    padding: 60px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT TEXT SIDE */
+.header-text {
+    max-width: 60%;
 }
 
 h1 {
@@ -29,6 +37,7 @@ p {
 
 section {
     padding: 40px 20px;
+    text-align: center;
 }
 
 .card {
@@ -54,10 +63,22 @@ button {
 button:hover {
     background: #e68900;
 }
+
+/* ROUND IMAGE STYLE */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff9800;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
 footer {
     padding: 20px;
     background: rgba(0,0,0,0.3);
     margin-top: 40px;
+    text-align: center;
 }
 </style>
 </head>
@@ -65,9 +86,14 @@ footer {
 <body>
 
 <header>
-    <h1>Hi, I'm Krishnapriyan 👋</h1>
-    <p>Campaign Management | Data Enthusiast | Tech Explorer</p>
-    <button onclick="alert('Thanks for visiting my website! 😊')">Say Hello</button>
+    <div class="header-text">
+        <h1>Hi, I'm Krishnapriyan 👋</h1>
+        <p>Campaign Management | Data Enthusiast | Tech Explorer</p>
+        <button onclick="window.location.href='hello.html'">Say Hello</button>
+    </div>
+
+    <!-- PHOTO RIGHT SIDE -->
+    <img src="DP.png" alt="Krishnapriyan Photo" class="profile-pic">
 </header>
 
 <section>
@@ -98,4 +124,3 @@ footer {
 
 </body>
 </html>
-
