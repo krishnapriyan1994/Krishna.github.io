@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hello Page</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: #dd2476;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Hello! 👋 Welcome to My Page</h1>
+    <p>Thanks for clicking Say Hello 😄</p>
+    <a href="index.html">⬅ Go Back</a>
+</div>
+
+</body>
+</html>
